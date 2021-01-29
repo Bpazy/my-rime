@@ -35,7 +35,6 @@ patch:
   switches:
     - name: ascii_mode
       reset: 1 # 1为默认英文，0为默认中文
-  vocabulary: essay-zh-hans
   punctuator:
     # 我不会使用全角英文的，我觉得其他程序员也不会。
     # 但是中文的标点又是全角的，所以我就只留下半角然后改它的标点。
