@@ -6,7 +6,7 @@
 | [袖珍简化字拼音輸入方案](https://github.com/rime/rime-pinyin-simp)  | `rime-install pinyin-simp` | 使用其中的简化字词库，具有正确的词频 |
 | [简化字八股文](https://github.com/rime/rime-essay-simp)  | `rime-install essay-simp` | 词汇表的简化字版本 |
 | [双拼输入方案](https://github.com/rime/rime-double-pinyin)  | `rime-install double-pinyin` | 使用其中的小鹤双拼方案 |
-| [scel2txt](https://github.com/lewangdev/scel2txt)  | `手动将输出合并到 extended.dict.yaml` | 搜狗细胞词库转鼠须管（Rime）词库 |
+| [scel2txt](https://github.com/lewangdev/scel2txt)  | `手动添加词库` | 搜狗细胞词库转鼠须管（Rime）词库 |
 
 ## 设置配置文件
 ### 1. 添加简体中文词库
@@ -27,7 +27,15 @@ import_tables:
 ...
 ```
 
-### 2. 设置双拼方案
+### 2. 添加搜狗词库
+1. 使用 [scel2txt](https://github.com/lewangdev/scel2txt) 生成搜狗词库 `luna_pinyin.sougou.dict.yaml`。  
+2. 修改输出的文件：
+>  1. 将文件名修改为 `sougou.dict.yaml`
+>  2. 将内容中的 `name: luna_pinyin_sougou` 修改为 `name: sougou`
+3. 修改 `extended.dict.yaml`，在 `import_tables` 中添加 `sougou` 项。
+
+
+### 3. 设置双拼方案
 在 Rime 的“用户文件夹”下新建 `double_pinyin_flypy.custom.yaml`:
 ```yaml
 patch:
@@ -80,7 +88,7 @@ patch:
       "~": "~"
 ```
 
-### 3. 设置 Rime 默认行为
+### 4. 设置 Rime 默认行为
 在 Rime 的“用户文件夹”下存在 `default.custom.yaml` 文件，编辑并添加下面内容:
 ```yaml
 patch:
@@ -91,7 +99,7 @@ patch:
     - {schema: double_pinyin_flypy}
 ```
 
-### 4. 设置 weasel 样式
+### 5. 设置 weasel 样式
 在 Rime 的“用户文件夹”下存在 `weasel.custom.yaml` 文件，编辑并添加下面内容:
 ```yaml
 patch:
