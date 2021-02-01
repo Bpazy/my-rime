@@ -3,7 +3,7 @@
 ## 安装相关项
 | 项 | 安装命令 | 作用 |
 | -- | ---- | -------- |
-| [袖珍简化字拼音輸入方案](https://github.com/rime/rime-pinyin-simp)  | `rime-install essay-simp` | 使用其中的简化字词库，具有正确的词频 |
+| [袖珍简化字拼音輸入方案](https://github.com/rime/rime-pinyin-simp)  | `rime-install pinyin-simp` | 使用其中的简化字词库，具有正确的词频 |
 | [简化字八股文](https://github.com/rime/rime-essay-simp)  | `rime-install essay-simp` | 词汇表的简化字版本 |
 | [双拼输入方案](https://github.com/rime/rime-double-pinyin)  | `rime-install double-pinyin` | 使用其中的小鹤双拼方案 |
 
