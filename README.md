@@ -6,6 +6,7 @@
 | [袖珍简化字拼音輸入方案](https://github.com/rime/rime-pinyin-simp)  | `rime-install pinyin-simp` | 使用其中的简化字词库，具有正确的词频 |
 | [简化字八股文](https://github.com/rime/rime-essay-simp)  | `rime-install essay-simp` | 词汇表的简化字版本 |
 | [双拼输入方案](https://github.com/rime/rime-double-pinyin)  | `rime-install double-pinyin` | 使用其中的小鹤双拼方案 |
+| [scel2txt](https://github.com/lewangdev/scel2txt)  | `手动将输出合并到 extended.dict.yaml` | 搜狗细胞词库转鼠须管（Rime）词库 |
 
 ## 设置配置文件
 ### 1. 添加简体中文词库
