@@ -95,6 +95,7 @@ patch:
   "ascii_composer/switch_key":
     Shift_L: commit_code
     Shift_R: commit_code
+    Caps_Lock: commit_code
   schema_list:
     - {schema: double_pinyin_flypy}
 ```
